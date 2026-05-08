@@ -1,0 +1,102 @@
+import type { AlarmInput } from "../domain/types";
+
+export const defaultInput: AlarmInput = {
+  zone: "CABA - Palermo",
+  customerType: "Hogar Base",
+  visual: "Sin deteccion visual",
+  audio: "Silencio",
+  sensor: "Sin sensor activado",
+  connectivity: "Fibra / WiFi",
+  timeSlot: "Tarde",
+  thermalCamera: "No",
+};
+
+export const demoScenarios: Record<string, AlarmInput> = {
+  "Caso verde: Mascota + ladrido": {
+    ...defaultInput,
+    visual: "Mascota",
+    audio: "Ladrido",
+    sensor: "Movimiento interior",
+  },
+  "Caso amarillo: Persona desconocida + movimiento": {
+    ...defaultInput,
+    zone: "GBA Norte - San Isidro",
+    customerType: "Hogar Premium",
+    visual: "Persona desconocida",
+    audio: "Ruido ambiente",
+    sensor: "Movimiento interior",
+    timeSlot: "Noche",
+  },
+  "Caso rojo: Arma + rotura de cristal": {
+    ...defaultInput,
+    zone: "CABA - Palermo",
+    customerType: "PyME",
+    visual: "Arma visible",
+    audio: "Rotura de cristal",
+    sensor: "ShockSensor / golpe",
+    timeSlot: "Madrugada",
+  },
+  "Caso ZeroVision: Humo + hand-off sensorial": {
+    ...defaultInput,
+    zone: "Rosario",
+    customerType: "Hogar Premium",
+    visual: "Camara obstruida por humo",
+    audio: "Pasos internos",
+    sensor: "Activacion ZeroVision",
+    connectivity: "4G / 5G M2M",
+    timeSlot: "Noche",
+    thermalCamera: "Si",
+  },
+  "Caso Agro: Sensor rural + inhibicion de senal": {
+    ...defaultInput,
+    zone: "Zona Rural / Agro",
+    customerType: "Agro / Rural",
+    visual: "Sombra / movimiento leve",
+    audio: "Golpe fuerte en puerta",
+    sensor: "Sensor perimetral rural LoRaWAN",
+    connectivity: "Senal inhibida",
+    timeSlot: "Madrugada",
+  },
+};
+
+export const options = {
+  zones: [
+    "CABA - Palermo",
+    "GBA Norte - San Isidro",
+    "GBA Oeste - Moron",
+    "Cordoba Capital",
+    "Rosario",
+    "Zona Rural / Agro",
+  ],
+  customerTypes: ["Hogar Base", "Hogar Premium", "PyME", "Agro / Rural"],
+  visualVectors: [
+    "Sin deteccion visual",
+    "Mascota",
+    "Sombra / movimiento leve",
+    "Persona desconocida",
+    "Persona encapuchada",
+    "Arma visible",
+    "Camara obstruida por humo",
+  ],
+  audioVectors: [
+    "Silencio",
+    "Ladrido",
+    "Ruido ambiente",
+    "Rotura de cristal",
+    "Grito / pedido de auxilio",
+    "Pasos internos",
+    "Golpe fuerte en puerta",
+  ],
+  sensorVectors: [
+    "Sin sensor activado",
+    "Apertura de puerta",
+    "ShockSensor / golpe",
+    "Movimiento interior",
+    "Inhibicion de senal",
+    "Activacion ZeroVision",
+    "Sensor perimetral rural LoRaWAN",
+  ],
+  connectivities: ["Fibra / WiFi", "4G / 5G M2M", "LoRaWAN", "Satelital", "Senal inhibida"],
+  timeSlots: ["Manana", "Tarde", "Noche", "Madrugada"],
+  thermalCamera: ["Si", "No"],
+} as const;
