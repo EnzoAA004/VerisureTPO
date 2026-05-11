@@ -1,10 +1,11 @@
-import { BarChart3, RadioTower, ShieldAlert } from "lucide-react";
+import { BarChart3, BrainCircuit, RadioTower, ShieldAlert } from "lucide-react";
 
-export type Tab = "operator" | "dashboard";
+export type Tab = "operator" | "dashboard" | "technologies";
 
 const items: { id: Tab; label: string; sublabel: string; icon: typeof RadioTower }[] = [
   { id: "operator", label: "Operador CRA", sublabel: "Recepcion de eventos", icon: RadioTower },
   { id: "dashboard", label: "Gerencia", sublabel: "KPIs gerenciales", icon: BarChart3 },
+  { id: "technologies", label: "Tecnologías", sublabel: "IA, IoT, RPA, BYOD", icon: BrainCircuit },
 ];
 
 interface SidebarProps {
@@ -15,7 +16,7 @@ interface SidebarProps {
 export function Sidebar({ activeTab, onTabChange }: SidebarProps) {
   return (
     <aside className="border-b border-slate-200 bg-white/90 p-4 backdrop-blur-md lg:min-h-[calc(100vh-68px)] lg:w-56 lg:border-b-0 lg:border-r xl:w-60">
-      <nav className="grid gap-1.5 sm:grid-cols-2 lg:grid-cols-1">
+      <nav className="grid gap-1.5 sm:grid-cols-3 lg:grid-cols-1">
         {items.map((item) => {
           const Icon = item.icon;
           const active = activeTab === item.id;
