@@ -58,7 +58,7 @@ src/
 ├── components/
 │   ├── AppShell.tsx          # Layout principal
 │   ├── Header.tsx            # Header con reloj en vivo
-│   ├── Sidebar.tsx           # Navegación por 4 tabs
+│   ├── Sidebar.tsx           # Navegación por tabs
 │   ├── KpiCard.tsx           # Tarjeta de KPI con tendencia
 │   ├── StatusBadge.tsx       # Badge coloreado por estado
 │   ├── RiskGauge.tsx         # Gauge SVG semicircular con aguja
@@ -70,6 +70,7 @@ src/
 ├── pages/
 │   ├── OperatorPage.tsx      # Pantalla principal CRA
 │   ├── BiDashboardPage.tsx   # Dashboard gerencial BI
+│   ├── IntelligentTechnologiesPage.tsx # Tecnologías inteligentes Verisure
 │   ├── ArchitecturePage.tsx  # Arquitectura tecnológica
 │   └── DocumentationPage.tsx # Guía para exposición
 ├── domain/
@@ -103,6 +104,13 @@ src/
 - 6 gráficos con Recharts: barras (zona), donut (estado), líneas (evolución), barras horizontales (franja), barras (cliente), radial (cliente)
 - Datos combinados: 10 eventos históricos base + eventos de la sesión actual
 - 3 insight pills gerenciales al pie
+
+### Tecnologías Inteligentes Verisure
+- Módulo **Asistente Inteligente de Soporte Verisure 360°** con consultas frecuentes, clasificación de reclamos, derivación humana, tickets e indicadores de atención.
+- Módulo **Bienestar Seguro Verisure** con dashboard IoT para RR. HH., Obra Social y ART, priorizando privacidad, prevención de riesgos y clima organizacional.
+- Módulo **Automatización RPA** con flujo de reloj inteligente, plataforma segura, validación, legajo digital, informes y alertas preventivas.
+- Checklist de **Ciberseguridad y Protección de Datos** para alarmas, cámaras, ubicación, horarios, empleados y reportes de salud.
+- **Política BYOD** limitada a desarrollo, soporte remoto, análisis de datos, administración, obra social y ART; sin acceso directo sin control a cámaras, alarmas o datos críticos de clientes.
 
 ### Arquitectura Tecnológica
 - Flujo de 6 pasos con íconos y colores por etapa
