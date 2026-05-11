@@ -58,7 +58,7 @@ src/
 ├── components/
 │   ├── AppShell.tsx          # Layout principal
 │   ├── Header.tsx            # Header con reloj en vivo
-│   ├── Sidebar.tsx           # Navegación por 4 tabs
+│   ├── Sidebar.tsx           # Navegación por tabs
 │   ├── KpiCard.tsx           # Tarjeta de KPI con tendencia
 │   ├── StatusBadge.tsx       # Badge coloreado por estado
 │   ├── RiskGauge.tsx         # Gauge SVG semicircular con aguja
@@ -70,6 +70,7 @@ src/
 ├── pages/
 │   ├── OperatorPage.tsx      # Pantalla principal CRA
 │   ├── BiDashboardPage.tsx   # Dashboard gerencial BI
+│   ├── IntelligentTechnologiesPage.tsx # Tecnologías inteligentes Verisure
 │   ├── ArchitecturePage.tsx  # Arquitectura tecnológica
 │   └── DocumentationPage.tsx # Guía para exposición
 ├── domain/
@@ -103,6 +104,14 @@ src/
 - 6 gráficos con Recharts: barras (zona), donut (estado), líneas (evolución), barras horizontales (franja), barras (cliente), radial (cliente)
 - Datos combinados: 10 eventos históricos base + eventos de la sesión actual
 - 3 insight pills gerenciales al pie
+
+### Tecnologías Inteligentes Verisure
+- Chatbot funcional **Asistente IA de Soporte Verisure 360°** con formulario, consultas rápidas, clasificación automática, prioridad, tickets, derivación humana, cierre, satisfacción y métricas dinámicas.
+- Dashboard **Bienestar Seguro Verisure** con empleados simulados, sincronización de reloj inteligente, alertas de salud laboral, recomendaciones, revisión e informes anonimizados para RR. HH., Obra Social y ART.
+- Simulación **Automatización RPA** con pasos que cambian de estado, ejecución/reintento del bot, informe simulado, contadores y log de procesos.
+- Panel **Ciberseguridad y Protección de Datos** con checklist interactivo, cálculo de riesgo, simulación de incidentes y registro de eventos sensibles.
+- Gestión **BYOD** con formulario controlado, evaluación automática, estados de acceso, revocación, borrado remoto selectivo y bloqueo visual de módulos críticos para dispositivos no aprobados.
+- Integraciones simuladas entre módulos: tickets por alarma manipulada, alertas IoT enviadas a RPA, eventos RPA/BYOD registrados en ciberseguridad y efecto de MFA sobre riesgo BYOD.
 
 ### Arquitectura Tecnológica
 - Flujo de 6 pasos con íconos y colores por etapa
