@@ -106,11 +106,12 @@ src/
 - 3 insight pills gerenciales al pie
 
 ### Tecnologías Inteligentes Verisure
-- Módulo **Asistente Inteligente de Soporte Verisure 360°** con consultas frecuentes, clasificación de reclamos, derivación humana, tickets e indicadores de atención.
-- Módulo **Bienestar Seguro Verisure** con dashboard IoT para RR. HH., Obra Social y ART, priorizando privacidad, prevención de riesgos y clima organizacional.
-- Módulo **Automatización RPA** con flujo de reloj inteligente, plataforma segura, validación, legajo digital, informes y alertas preventivas.
-- Checklist de **Ciberseguridad y Protección de Datos** para alarmas, cámaras, ubicación, horarios, empleados y reportes de salud.
-- **Política BYOD** limitada a desarrollo, soporte remoto, análisis de datos, administración, obra social y ART; sin acceso directo sin control a cámaras, alarmas o datos críticos de clientes.
+- Chatbot funcional **Asistente IA de Soporte Verisure 360°** con formulario, consultas rápidas, clasificación automática, prioridad, tickets, derivación humana, cierre, satisfacción y métricas dinámicas.
+- Dashboard **Bienestar Seguro Verisure** con empleados simulados, sincronización de reloj inteligente, alertas de salud laboral, recomendaciones, revisión e informes anonimizados para RR. HH., Obra Social y ART.
+- Simulación **Automatización RPA** con pasos que cambian de estado, ejecución/reintento del bot, informe simulado, contadores y log de procesos.
+- Panel **Ciberseguridad y Protección de Datos** con checklist interactivo, cálculo de riesgo, simulación de incidentes y registro de eventos sensibles.
+- Gestión **BYOD** con formulario controlado, evaluación automática, estados de acceso, revocación, borrado remoto selectivo y bloqueo visual de módulos críticos para dispositivos no aprobados.
+- Integraciones simuladas entre módulos: tickets por alarma manipulada, alertas IoT enviadas a RPA, eventos RPA/BYOD registrados en ciberseguridad y efecto de MFA sobre riesgo BYOD.
 
 ### Arquitectura Tecnológica
 - Flujo de 6 pasos con íconos y colores por etapa
