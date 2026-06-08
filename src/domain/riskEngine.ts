@@ -98,6 +98,16 @@ export function analyzeEvent(input: AlarmInput, now = new Date()): AlarmAnalysis
     decisionRules.push("Patrón doméstico: mascota + ladrido reduce criticidad.");
   }
 
+  if (input.visual === "Persona desconocida" && input.sensor === "Movimiento interior") {
+    score -= 15;
+    scoreBreakdown.push({
+      label: "Ajuste preventivo",
+      value: -15,
+      detail: "Persona desconocida + movimiento",
+    });
+    decisionRules.push("Contexto no concluyente: persona y movimiento requieren validación humana (amarillo).");
+  }
+
   if (forcedRed) {
     score = Math.max(score, 82);
     decisionRules.push(
